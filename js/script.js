@@ -96,9 +96,9 @@ function play() {
             //     if(bombsPosition.includes(i+1)) {
             //         squares[i].classList.add('red');
 
-            //         squares[i].innerHTML = `
-            //         <span class="visible">${i+1}</span>
-            //     `;
+                //     squares[i].innerHTML = `
+                //     <span class="visible">${i+1}</span>
+                // `;
             // }
             // console.log(squares[i])
 
@@ -160,6 +160,9 @@ function play() {
             let num = i + 1;
             if (bombsPosition.includes(num)) {
                 squares[i].classList.add('red');
+                squares[i].innerHTML = `
+                <span class="visible">${i+1}</span>
+            `;
             }
         }
 
